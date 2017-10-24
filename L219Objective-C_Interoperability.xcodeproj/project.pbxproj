@@ -13,6 +13,7 @@
 		FC33A1781F9FDDCE00F4423A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC33A1761F9FDDCE00F4423A /* Main.storyboard */; };
 		FC33A17A1F9FDDCE00F4423A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC33A1791F9FDDCE00F4423A /* Assets.xcassets */; };
 		FC33A17D1F9FDDCE00F4423A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC33A17B1F9FDDCE00F4423A /* LaunchScreen.storyboard */; };
+		FC33A1861F9FE02500F4423A /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC33A1851F9FE02500F4423A /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		FC33A1791F9FDDCE00F4423A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC33A17C1F9FDDCE00F4423A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC33A17E1F9FDDCE00F4423A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC33A1841F9FE02500F4423A /* L219Objective-C_Interoperability-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "L219Objective-C_Interoperability-Bridging-Header.h"; sourceTree = "<group>"; };
+		FC33A1851F9FE02500F4423A /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				FC33A17B1F9FDDCE00F4423A /* LaunchScreen.storyboard */,
 				FC33A17E1F9FDDCE00F4423A /* Info.plist */,
 				FC33A16D1F9FDDCE00F4423A /* Supporting Files */,
+				FC33A1851F9FE02500F4423A /* SecondVC.swift */,
+				FC33A1841F9FE02500F4423A /* L219Objective-C_Interoperability-Bridging-Header.h */,
 			);
 			path = "L219Objective-C_Interoperability";
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 					FC33A1691F9FDDCE00F4423A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6WESCS98BF;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -153,6 +159,7 @@
 			files = (
 				FC33A1751F9FDDCE00F4423A /* ViewController.m in Sources */,
 				FC33A1721F9FDDCE00F4423A /* AppDelegate.m in Sources */,
+				FC33A1861F9FE02500F4423A /* SecondVC.swift in Sources */,
 				FC33A16F1F9FDDCE00F4423A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,11 +282,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6WESCS98BF;
 				INFOPLIST_FILE = "L219Objective-C_Interoperability/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.muge.L219Objective-C-Interoperability";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "L219Objective-C_Interoperability/L219Objective-C_Interoperability-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -287,11 +298,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6WESCS98BF;
 				INFOPLIST_FILE = "L219Objective-C_Interoperability/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.muge.L219Objective-C-Interoperability";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "L219Objective-C_Interoperability/L219Objective-C_Interoperability-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
